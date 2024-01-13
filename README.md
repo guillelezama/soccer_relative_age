@@ -1,9 +1,20 @@
-# soccer_relative_age
-This is a project where I intended to analyze whether the Relative Age Effect, a bias that exists in the selection process for youth athletes, exists also in Uruguayan soccer. To do that, I scraped data from the Uruguayan Football Association (auf.org.uy) to get a dataset of all the players that participated in Youth teams and Professional teams in the period 2013-2022 for both Men and Women's teams. Youth teams go from Under 14 to Under 19.
-* analysis.ipynb performs the main analysis. I estimate a logit model and hazard models to assess whether the birth month affects the probability of dropping out.
-* scrap_auf.ipynb gets data from the AUF's website using Python. I use Beautiful Soup and Selenium's libraries.
-* scrap_transfermakt.ipynb gets data from transfermarkt.es website using Python. I use Beautiful Soup and Selenium's libraries. This dataset gives a good benchmark since it contains all male players born in a specific year (it does not matter where are they playing).
-* process_nac.ipynb process births data. This data comes from the Health Authority in Uruguay (MSP) (https://uins.msp.gub.uy/). I process it to show how the distribution looks like for all men and women born at the same time that soccer players.
-* extra_cleaning.py is a Python script that cleans each of the datasets to be processed in analysis.ipynb.
+# Soccer Relative Age Analysis Project
+## Overview
+This project investigates the existence of the Relative Age Effect, a known bias in the selection process of youth athletes, within Uruguayan soccer. The analysis spans both male and female players in Youth and Professional teams from 2013 to 2022.
 
-For any question you can contact me at guillelezama [at] pitt [dot] edu
+## Data Sources
+The data was obtained from the following sources:
+
+1) Uruguayan Football Association (AUF): Data for players in Youth (U14 to U19) and Professional teams. Website
+2) Health Authority in Uruguay (MSP): Births data for comparative analysis. Website
+3) Transfermarkt: Additional dataset for male players born in specific years. Website
+
+## Files Description
+* analysis.ipynb: Main analysis notebook. Implements logit and hazard models to evaluate the impact of birth month on player dropout rates.
+* scrap_auf.ipynb: Python script to scrape data from the AUF's website using Beautiful Soup and Selenium libraries.
+* scrap_transfermarkt.ipynb: Python script to scrape data from Transfermarkt. Focuses on male players born in specific years.
+* process_nac.ipynb: Processes birth data from the MSP for distribution analysis.
+* extra_cleaning.py: Python script for cleaning datasets for use in analysis.ipynb.
+
+# Contact
+For inquiries, please contact: guillelezama [at] pitt [dot] edu
